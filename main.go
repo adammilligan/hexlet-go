@@ -1,11 +1,11 @@
 package main
 
 import (
-  greetingv1 "hexlet-go/greeting"
-  greetingv2 "hexlet-go/greeting/v2"
-  "fmt"
+	"github.com/fatih/color"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
-  fmt.Println("Первое приветствие: ", greetingv1.Get(), "\n", "Второе приветствие: ", greetingv2.Get())
+	text := color.RedString("Hello, Hexlet!")
+	logrus.Println(text)
 }
